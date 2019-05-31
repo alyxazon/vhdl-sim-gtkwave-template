@@ -1,0 +1,1 @@
+# ghdl_gtkwave_template
