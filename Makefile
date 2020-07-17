@@ -4,10 +4,10 @@ TB_NAME      := testbench
 STOP_TIME    := 1ms
 
 # Generic settings
-GHDL_BIN     := ghdl
-GHDL_FLAGS   := --ieee=synopsys --warn-no-vital-generic
-GTKWWAVE_BIN := gtkwave
-VCD_NAME     := $(TB_NAME).vcd
+GHDL_BIN    := ghdl
+GHDL_FLAGS  := --ieee=synopsys --warn-no-vital-generic
+GTKWAVE_BIN := gtkwave
+VCD_NAME    := $(TB_NAME).vcd
 
 # Targets
 all: analyze check_syntax elaborate run
@@ -25,7 +25,7 @@ run:
 	$(GHDL_BIN) -r $(TB_NAME) --stop-time=$(STOP_TIME) --vcd=$(VCD_NAME)
 
 view:
-	$(GTKWWAVE_BIN) $(VCD_NAME) &
+	$(GTKWAVE_BIN) $(VCD_NAME) &
 
 clean:
 	rm *.cf
