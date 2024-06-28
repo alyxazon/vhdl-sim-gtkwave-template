@@ -1,4 +1,4 @@
-# ghdl_gtkwave_template
+# vhdl-sim-gtkwave-template
 
 Just a simple GHDL and GTKWAVE example (using VHDL).
 
